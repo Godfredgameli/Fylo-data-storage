@@ -1,0 +1,256 @@
+/*Typography*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+/*Colors*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: red 1px solid;
+}
+
+body {
+  background-image: url(images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: 0 50vh;
+  background-color: #0c122c;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 400;
+  color: #dddbff;
+}
+
+.content-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  align-items: flex-end;
+}
+
+.content-wrapper .file-wrapper {
+  height: 100%;
+  width: 40%;
+  border-radius: 10px 50% 10px 10px;
+  background-color: #1d2c67;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 5%;
+}
+
+.content-wrapper .file-wrapper .logo-wrapper {
+  background: transparent;
+}
+
+.content-wrapper .file-wrapper .logo-wrapper img {
+  background: transparent;
+}
+
+.content-wrapper .file-wrapper .file-process {
+  background: transparent;
+  display: flex;
+}
+
+.content-wrapper .file-wrapper .file-process img {
+  padding: 15px;
+  border-radius: 10px;
+  background: #0c122c;
+}
+
+.content-wrapper .file-wrapper .file-process .second {
+  margin-left: 10px;
+}
+
+.content-wrapper .file-wrapper .file-process .third {
+  margin-left: 10px;
+}
+
+.content-wrapper .storage-wrapper {
+  height: 80%;
+  width: 58%;
+  border-radius: 10px;
+  background-color: #1d2c67;
+  padding: 5%;
+  z-index: 0;
+}
+
+.content-wrapper .storage-wrapper .progress-wrap {
+  height: 80%;
+  margin-top: 18%;
+  z-index: 0;
+}
+
+.content-wrapper .storage-wrapper .progress-wrap p span {
+  font-weight: 700;
+}
+
+.content-wrapper .storage-wrapper .progress-wrap .progress-bar {
+  width: 100%;
+  border-radius: 10px;
+  height: 20px;
+  margin-top: 15px;
+  background: #0c122c;
+  z-index: 0;
+}
+
+.content-wrapper .storage-wrapper .progress-wrap .progress-bar .range-progress {
+  background-image: linear-gradient(to right, #ffa399, #ff4d97);
+  width: 100%;
+  height: 100%;
+  transform: scale(0.72);
+  border-radius: 10px;
+  transform-origin: 13px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 0;
+}
+
+.content-wrapper .storage-wrapper .progress-wrap .progress-bar .range-progress .circle-finish {
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+}
+
+.content-wrapper .storage-wrapper .progress-wrap .limit {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 0;
+}
+
+.content-wrapper .storage-wrapper .progress-wrap .limit p {
+  font-weight: 700;
+}
+
+.content-wrapper .storage-wrapper .remainder-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 20%;
+  z-index: 2;
+  margin-top: -21%;
+}
+
+.content-wrapper .storage-wrapper .remainder-container .remainder {
+  background: white;
+  padding: 8px 0;
+  color: #848794;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  width: 50%;
+  border-radius: 10px 10px 0 10px;
+  border: white;
+}
+
+.content-wrapper .storage-wrapper .remainder-container .remainder span {
+  color: #0c122c;
+  font-size: 40px;
+  margin-right: 8px;
+}
+
+.content-wrapper .storage-wrapper .remainder-container .arrow {
+  padding: 10px;
+  background: white;
+  height: 40px;
+  width: 6%;
+  clip-path: polygon(100% 100%, 0 0, 100% 0);
+  float: right;
+  border: white;
+  margin-top: -1px;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.attribution a {
+  color: #04e748;
+}
+
+@media screen and (max-width: 1350px) {
+  .content-wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .content-wrapper {
+    width: 80%;
+  }
+  .content-wrapper .storage-wrapper .remainder-container .remainder span {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content-wrapper {
+    width: 90%;
+  }
+  .content-wrapper .storage-wrapper .remainder-container .remainder span {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background: url(images/bg-mobile.png);
+  }
+  .content-wrapper {
+    width: 95%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .content-wrapper .file-wrapper {
+    width: 100%;
+    height: 49%;
+  }
+  .content-wrapper .file-wrapper .file-process img {
+    padding: 10px;
+  }
+  .content-wrapper .storage-wrapper {
+    width: 100%;
+    height: 38%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    padding-top: 0;
+  }
+  .content-wrapper .storage-wrapper .progress-wrap {
+    margin-top: 0;
+  }
+  .content-wrapper .storage-wrapper .remainder-container {
+    margin-bottom: -8%;
+    margin-top: 0;
+    align-items: center;
+  }
+  .content-wrapper .storage-wrapper .remainder-container .remainder {
+    border-radius: 10px;
+    padding: 4px 0;
+  }
+  .content-wrapper .storage-wrapper .remainder-container .remainder span {
+    font-size: 25px;
+  }
+  .content-wrapper .storage-wrapper .remainder-container .arrow {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
