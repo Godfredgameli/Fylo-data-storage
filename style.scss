@@ -30,6 +30,7 @@ body{
     color: $pale-blue;
 }
 
+/*main container wrapper*/
 .content-wrapper{
     position: absolute;
     left: 50%;
@@ -42,7 +43,7 @@ body{
     background: transparent;
     align-items:flex-end;
     
-
+    /*file document section*/
     .file-wrapper{
         height: 100%;
         width: 40%;
@@ -80,6 +81,7 @@ body{
             }
         }
     }
+    /*storage section*/
     .storage-wrapper{
         height: 80%;
         width: 58%;
@@ -107,9 +109,7 @@ body{
                 height: 20px;
                 margin-top: 15px;
                 background: $very-dark-blue;
-                z-index: 0;
-                
-    
+
                 .range-progress{
                     background-image: linear-gradient(to right, $gradient1, $gradient2);
                     width: 100%;
@@ -120,7 +120,7 @@ body{
                     display: flex;
                     justify-content: flex-end;
                     align-items: center;
-                    z-index: 0;
+                   
                     
     
                     .circle-finish{
@@ -190,6 +190,7 @@ body{
         }
     }
 }
+/*Footer*/
 .attribution { 
     font-size: 12px; 
     text-align: center;
@@ -203,6 +204,7 @@ body{
     }
 }
 
+/*Responsiveness for various screen sizes*/
 @media screen and (max-width:1350px){
     .content-wrapper{
         width: 80%;

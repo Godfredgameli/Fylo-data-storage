@@ -1,57 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <meta name="description" content="Calculate your storage">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta name="description" content="Calculate your storage" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Fylo data storage component</title>
-  
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <main class="content-wrapper">
-    <section class="file-wrapper">
-      <div class="logo-wrapper">
-        <img src="images/logo.svg" alt="logo">
-      </div>
-      <div class="file-process">
-          <img src="images/icon-document.svg" alt="document icon">
-          <img src="images/icon-folder.svg" alt="folder icon" class="second">
-          <img src="images/icon-upload.svg" alt="upload icon" class="third">
-        
-      </div>
-    </section>
-    <section class="storage-wrapper">
-      <div class="remainder-container">
-        <div class="remainder">
-          <span>185 GB</span> Left
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
+  <body>
+    <!-- main container wrapper -->
+    <main class="content-wrapper">
+      <!-- file document section -->
+      <section class="file-wrapper">
+        <div class="logo-wrapper">
+          <img src="images/logo.svg" alt="logo" />
         </div>
-        <div class="arrow"></div>
-      </div>
-      <div class="progress-wrap">
-        <p>You’ve used <span>815 GB</span> of your storage</p>
-        <div class="progress-bar">
-          <div class="range-progress">
-            <div class="circle-finish">
+        <div class="file-process">
+          <img src="images/icon-document.svg" alt="document icon" />
+          <img src="images/icon-folder.svg" alt="folder icon" class="second" />
+          <img src="images/icon-upload.svg" alt="upload icon" class="third" />
+        </div>
+      </section>
+      <section class="storage-wrapper">
+        <!-- storage section -->
+        <div class="remainder-container">
+          <div class="remainder"><span>185 GB</span> Left</div>
+          <div class="arrow"></div>
+        </div>
+        <div class="progress-wrap">
+          <p>You’ve used <span>815 GB</span> of your storage</p>
+          <div class="progress-bar">
+            <div class="range-progress">
+              <div class="circle-finish"></div>
             </div>
           </div>
+          <div class="limit">
+            <p>0 GB</p>
+            <p>1000 GB</p>
+          </div>
         </div>
-        <div class="limit">
-          <p>0 GB</p>
-          <p>1000 GB</p>
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
-    Coded by <a href="https://www.github.com/Godfredgameli" target="_blank" rel="noopener">Godfred Gameli</a>.
-  </footer>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.github.com/Godfredgameli"
+        target="_blank"
+        rel="noopener"
+        >Godfred Gameli</a
+      >.
+    </footer>
+  </body>
 </html>

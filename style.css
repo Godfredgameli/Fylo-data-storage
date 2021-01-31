@@ -18,6 +18,7 @@ body {
   color: #dddbff;
 }
 
+/*main container wrapper*/
 .content-wrapper {
   position: absolute;
   left: 50%;
@@ -29,6 +30,8 @@ body {
   justify-content: space-between;
   background: transparent;
   align-items: flex-end;
+  /*file document section*/
+  /*storage section*/
 }
 
 .content-wrapper .file-wrapper {
@@ -94,7 +97,6 @@ body {
   height: 20px;
   margin-top: 15px;
   background: #0c122c;
-  z-index: 0;
 }
 
 .content-wrapper .storage-wrapper .progress-wrap .progress-bar .range-progress {
@@ -107,7 +109,6 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  z-index: 0;
 }
 
 .content-wrapper .storage-wrapper .progress-wrap .progress-bar .range-progress .circle-finish {
@@ -169,6 +170,7 @@ body {
   margin-top: -1px;
 }
 
+/*Footer*/
 .attribution {
   font-size: 12px;
   text-align: center;
@@ -182,6 +184,7 @@ body {
   color: #04e748;
 }
 
+/*Responsiveness for various screen sizes*/
 @media screen and (max-width: 1350px) {
   .content-wrapper {
     width: 80%;
